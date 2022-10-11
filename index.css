@@ -20,14 +20,20 @@ header {
 
 /**
  * ----------------------------------------
- *                 Habilidades
+ *                Habilidades
  * ----------------------------------------
  */
 .skill {
-    border-radius: 10px;
+    /* border-radius: 10px;
     background: #fdf7f7;
     box-shadow: 6px 6px 11px #dbd4d4,
-        -6px -6px 11px #fffefe;
+        -6px -6px 11px #fffefe; */
+}
+
+.skill:hover {
+    cursor: pointer;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
 }
 
 .text-node {
@@ -36,6 +42,10 @@ header {
 
 .text-bootstrap {
     color: #722ef9;
+}
+
+.text-react {
+    color: #61DAFB;
 }
 
 /**

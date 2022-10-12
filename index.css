@@ -11,7 +11,7 @@ header {
 
 /**
  * ----------------------------------------
- *                Perfil
+ *                Profile
  * ----------------------------------------
  */
 
@@ -26,7 +26,7 @@ header {
     height: 380px;
 }
 
-.perfil {
+.profile {
     width: 100%;
     max-height: 380px;
     display: flex;
@@ -41,19 +41,18 @@ header {
 
 }
 
-.info-perfil {
+.profile-info {
     width: 70%;
     margin: 0 15px 0 15px;
 }
 
 /**
  * ----------------------------------------
- *                Habilidades
+ *                Skills
  * ----------------------------------------
  */
 
 .skill:hover {
-    cursor: pointer;
     -webkit-animation: vibrate-1 0.3s linear infinite both;
     animation: vibrate-1 0.3s linear infinite both;
 }
@@ -72,27 +71,87 @@ header {
 
 /**
  * ----------------------------------------
- *                 Animações
+ *                Projects
+ * ----------------------------------------
+ */
+
+#projects-container {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.project {
+    width: 44%;
+    min-width: 320px;
+    min-height: 240px;
+    margin: auto;
+}
+
+.project .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.project .card-body {
+    text-align: center;
+}
+
+.project-logo:hover {
+    cursor: pointer;
+    -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.project i {
+    font-size: 10em;
+}
+
+.project label {
+    margin-left: 20px;
+    color: black;
+}
+
+/**
+ * ----------------------------------------
+ *                 Tooltips
+ * ----------------------------------------
+ */
+
+.primary-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
+
+.danger-tooltip {
+    --bs-tooltip-bg: var(--bs-danger);
+}
+
+.node-tooltip {
+    --bs-tooltip-bg: #2e6b10;
+}
+
+.warning-tooltip {
+    --bs-tooltip-bg: var(--bs-warning);
+}
+
+.bootstrap-tooltip {
+    --bs-tooltip-bg: #722ef9;
+}
+
+.react-tooltip {
+    --bs-tooltip-bg: #61DAFB;
+}
+
+/**
+ * ----------------------------------------
+ *              Animations
  * ----------------------------------------
  */
 .flip-in-hor-bottom {
     -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.vibrate-1 {
-    -webkit-animation: vibrate-1 0.3s linear infinite both;
-    animation: vibrate-1 0.3s linear infinite both;
-}
-
-.roll-in-blurred-left {
-    -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-}
-
-.rotate-scale-up-diag-1 {
-    -webkit-animation: rotate-scale-up-diag-1 0.7s linear both;
-    animation: rotate-scale-up-diag-1 0.7s linear both;
 }
 
 @-webkit-keyframes flip-in-hor-bottom {
@@ -123,6 +182,10 @@ header {
     }
 }
 
+.vibrate-1 {
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
 
 @-webkit-keyframes vibrate-1 {
     0% {
@@ -188,6 +251,12 @@ header {
     }
 }
 
+
+.roll-in-blurred-left {
+    -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
 @-webkit-keyframes roll-in-blurred-left {
     0% {
         -webkit-transform: translateX(-1000px) rotate(-720deg);
@@ -224,6 +293,11 @@ header {
     }
 }
 
+.rotate-scale-up-diag-1 {
+    -webkit-animation: rotate-scale-up-diag-1 0.7s linear both;
+    animation: rotate-scale-up-diag-1 0.7s linear both;
+}
+
 @-webkit-keyframes rotate-scale-up-diag-1 {
     0% {
         -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -258,19 +332,90 @@ header {
     }
 }
 
+.rotate-in-center {
+    -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-in-center {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-in-center {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+
 /**
  * ----------------------------------------
  *               Media Queries
  * ----------------------------------------
  */
+
+@media (max-width: 1400px) {
+
+    .project {
+        min-height: 290px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .project {
+        display: flex;
+        min-height: 430px;
+    }
+
+    .project .card-body {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .project .card-body label {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .project {
+        min-height: 625px;
+    }
+}
+
 @media (max-width: 767px) {
+
+    header {
+        min-width: 325px;
+    }
 
     .container,
     .container-sm {
-        max-width: 325px;
+        width: 325px;
     }
 
-    .perfil {
+    .profile {
         display: inline;
         box-shadow: none;
     }
@@ -288,9 +433,32 @@ header {
         margin-left: 2px;
         margin-right: 2px;
     }
-    
-    .info-perfil{
-        visibility: hidden;
+
+    .info-profile {
+        margin-top: 10px;
+        width: auto;
     }
-    
+
+    #projects-container {
+        display: block;
+        max-width: 300px;
+    }
+
+
+    .project {
+        max-width: 300px;
+        margin: auto;
+        min-height: fit-content;
+        min-width: fit-content;
+    }
+
+    .card {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .card label {
+        margin-bottom: 20px;
+    }
+
 }

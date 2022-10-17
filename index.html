@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header class="mb-4 d-flex align-items-center">
     <div class="container">
       <div class="vibrate-1">
@@ -21,54 +22,55 @@
     </div>
   </header>
 
+  <!-- Profile Picture and Table Container -->
   <section id="profile-container" class="d-flex justify-content-center align-items-center">
     <div class="container profile">
       <div class="roll-in-blurred-left" id="profile-div-photo">
         <img src="assets/img/gatinho.jpg" alt="gatinho" id="profile-photo" />
       </div>
-      <div class="skill-list">
-        <div
-          class="skill ps-2 pe-2 pb-2 d-flex align-items-center justify-content-center text-primary rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="primary-tooltip"
+      <div id="skill-list">
+        <div class="skill p-2 d-flex align-items-center justify-content-center text-primary rotate-scale-up-diag-1"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="primary-tooltip"
           data-bs-title="CSS 3">
           <i class="fab fa-brands fa-css3 fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-danger rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="danger-tooltip"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="danger-tooltip"
           data-bs-title="HTML 5">
           <i class="fab fa-brands fa-html5 fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-node rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="node-tooltip"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="node-tooltip"
           data-bs-title="NODE.JS">
           <i class="fab fa-brands fa-node fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-warning rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="warning-tooltip"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="warning-tooltip"
           data-bs-title="TypeScript and JavaScript">
           <i class="fab fa-brands fa-js fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-bootstrap rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="bootstrap-tooltip"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="bootstrap-tooltip"
           data-bs-title="Bootstrap">
           <i class="fab fa-brands fa-bootstrap fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-danger rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="danger-tooltip"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="danger-tooltip"
           data-bs-title="Angular">
           <i class="fab fa-brands fa-angular fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-react rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="react-tooltip" data-bs-title="React">
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="react-tooltip"
+          data-bs-title="React">
           <i class="fab fa-brands fa-react fa-2x"></i>
         </div>
         <div class="skill p-2 d-flex align-items-center justify-content-center text-primary rotate-scale-up-diag-1"
-          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="primary-tooltip"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="primary-tooltip"
           data-bs-title="Java">
           <i class="fab fa-brands fa-java fa-2x"></i>
         </div>
       </div>
-      <div class="profile-info">
+      <div class="profile-info mt-5">
         <table class="table table-hover">
           <tr>
             <th>Higor Bueno</th>
@@ -80,59 +82,117 @@
             <td>21 anos</td>
           </tr>
           <tr>
-            <td>Developer</td>
+            <td>Desenvolvedor Full Stack</td>
           </tr>
           <tr>
-            <td>UNASP</td>
+            <td>Centro Universitário Adventista de São Paulo - UNASP</td>
           </tr>
-          <tr>
-            <td>Lorem Ipsum</td>
+          <tr id="skill-table-row">
+            <td>
+              <div class="d-flex">
+                <div
+                  class="skill ps-2 pe-2 pb-2 d-flex align-items-center justify-content-center text-primary rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="primary-tooltip"
+                  data-bs-title="CSS 3">
+                  <i class="fab fa-brands fa-css3 fa-2x"></i>
+                </div>
+                <div
+                  class="skill p-2 d-flex align-items-center justify-content-center text-danger rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="danger-tooltip"
+                  data-bs-title="HTML 5">
+                  <i class="fab fa-brands fa-html5 fa-2x"></i>
+                </div>
+                <div class="skill p-2 d-flex align-items-center justify-content-center text-node rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="node-tooltip"
+                  data-bs-title="NODE.JS">
+                  <i class="fab fa-brands fa-node fa-2x"></i>
+                </div>
+                <div
+                  class="skill p-2 d-flex align-items-center justify-content-center text-warning rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="warning-tooltip"
+                  data-bs-title="TypeScript and JavaScript">
+                  <i class="fab fa-brands fa-js fa-2x"></i>
+                </div>
+                <div
+                  class="skill p-2 d-flex align-items-center justify-content-center text-bootstrap rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="bootstrap-tooltip"
+                  data-bs-title="Bootstrap">
+                  <i class="fab fa-brands fa-bootstrap fa-2x"></i>
+                </div>
+                <div
+                  class="skill p-2 d-flex align-items-center justify-content-center text-danger rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="danger-tooltip"
+                  data-bs-title="Angular">
+                  <i class="fab fa-brands fa-angular fa-2x"></i>
+                </div>
+                <div
+                  class="skill p-2 d-flex align-items-center justify-content-center text-react rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="react-tooltip"
+                  data-bs-title="React">
+                  <i class="fab fa-brands fa-react fa-2x"></i>
+                </div>
+                <div
+                  class="skill p-2 d-flex align-items-center justify-content-center text-primary rotate-scale-up-diag-1"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="primary-tooltip"
+                  data-bs-title="Java">
+                  <i class="fab fa-brands fa-java fa-2x"></i>
+                </div>
+              </div>
+            </td>
           </tr>
 
         </table>
       </div>
+      <div id="end-table-space">
+      </div>
     </div>
   </section>
 
-  <section id="projects-container" class="container mt-5">
-    <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="danger-tooltip"
-      data-bs-title="Projeto em Angular">
-      <div class="card-body p-2">
-        <i class="project-logo  fab fa-brands fa-angular text-danger"></i>
-        <label>
-          Um projeto desenvolvido em Angular para treinar práticas.
+  <!-- Grid with project cards Containers -->
+  <section id="projects-cards" class="container mt-5">
+    <div class="cards">
+      <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="danger-tooltip"
+        data-bs-title="Projeto em Angular">
+        <div class="card-body p-2">
+          <i class="project-logo  fab fa-brands fa-angular text-danger"></i>
+          <label>
+            Um projeto desenvolvido em Angular para treinar práticas.
 
-          <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic pariatur dicta ipsa libero incidunt. Hic
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic pariatur dicta ipsa libero incidunt. Hic
           accusamus minima molestias perferendis totam ipsam alias harum, impedit quod in sed et eos error? -->
-        </label>
+          </label>
+        </div>
       </div>
-    </div>
 
-    <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="react-tooltip"
-      data-bs-title="Projeto em React">
-      <div class="card-body p-2">
-        <i class="project-logo fab fa-brands fa-react text-react"></i>
-        <label>
-          Um projeto desenvolvido em react para um trabalho universitário.
-          <!-- 
+      <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="react-tooltip"
+        data-bs-title="Projeto em React">
+        <div class="card-body p-2">
+          <i class="project-logo fab fa-brands fa-react text-react"></i>
+          <label>
+            Um projeto desenvolvido em react para um trabalho universitário.
+            <!-- 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores repudiandae aperiam iusto nesciunt
           vero eius ea eligendi vitae harum rem exercitationem earum, molestias nobis dignissimos qui corporis.
           Perspiciatis, delectus? -->
-        </label>
+          </label>
 
+        </div>
       </div>
     </div>
   </section>
 
 
+  <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
+  <!-- Tooltips Script -->
   <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
+  
 </body>
 
 </html>

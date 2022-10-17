@@ -493,7 +493,7 @@ header {
     }
 
     .project {
-        visibility: hidden;
+        visibility: hidden; /*FIXME: Remove this propertie and fix screen break*/
         margin: auto;
         min-height: fit-content;
         min-width: fit-content;

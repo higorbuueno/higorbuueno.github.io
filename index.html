@@ -140,8 +140,13 @@
               </div>
             </td>
           </tr>
-
         </table>
+        <div id="additional-informations">
+          <h4><b>Sobre mim</b></h3>
+            <p>
+              Just a little and dreamy intern
+            </p>
+        </div>
       </div>
       <div id="end-table-space">
       </div>
@@ -149,21 +154,8 @@
   </section>
 
   <!-- Grid with project cards Containers -->
-  <section id="projects-cards" class="container mt-5">
+  <section id="projects-cards" class="container">
     <div class="cards">
-      <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="danger-tooltip"
-        data-bs-title="Projeto em Angular">
-        <div class="card-body p-2">
-          <i class="project-logo  fab fa-brands fa-angular text-danger"></i>
-          <label>
-            Um projeto desenvolvido em Angular para treinar práticas.
-
-            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic pariatur dicta ipsa libero incidunt. Hic
-          accusamus minima molestias perferendis totam ipsam alias harum, impedit quod in sed et eos error? -->
-          </label>
-        </div>
-      </div>
-
       <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="react-tooltip"
         data-bs-title="Projeto em React">
         <div class="card-body p-2">
@@ -175,8 +167,37 @@
           vero eius ea eligendi vitae harum rem exercitationem earum, molestias nobis dignissimos qui corporis.
           Perspiciatis, delectus? -->
           </label>
-
         </div>
+        <div id="status" class="alert alert-success text-center mb-0" role="alert">Concluído</div>
+      </div>
+
+      <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="node-tooltip"
+        data-bs-title="Projeto em NodeJS">
+        <div class="card-body p-2">
+          <i class="project-logo fab fa-brands fa-node fa-2x text-node"></i>
+          <label>
+            Aplicação monolita de API's desenvolvida em NodeJS utilizando NestJS.
+            <!-- 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores repudiandae aperiam iusto nesciunt
+          vero eius ea eligendi vitae harum rem exercitationem earum, molestias nobis dignissimos qui corporis.
+          Perspiciatis, delectus? -->
+          </label>
+        </div>
+        <div id="status" class="alert alert-warning text-center mb-0" role="alert">Em progresso</div>
+      </div>
+
+      <div class="card project" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="danger-tooltip"
+        data-bs-title="Projeto em Angular">
+        <div class="card-body p-2">
+          <i class="project-logo  fab fa-brands fa-angular text-danger"></i>
+          <label>
+            Um projeto desenvolvido em Angular para treinar práticas.
+
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic pariatur dicta ipsa libero incidunt. Hic
+        accusamus minima molestias perferendis totam ipsam alias harum, impedit quod in sed et eos error? -->
+          </label>
+        </div>
+        <div id="status" class="alert alert-danger text-center mb-0" role="alert">Pendente</div>
       </div>
     </div>
   </section>
@@ -192,7 +213,7 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
-  
+
 </body>
 
 </html>

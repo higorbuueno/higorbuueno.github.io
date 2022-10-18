@@ -60,6 +60,11 @@ header {
     margin: 0 15px 0 15px;
 }
 
+#additional-informations {
+    visibility: collapse; /*TODO: Adicionar este campo apenas quando o site estiver pronto.*/
+    margin-top: 20px;
+}
+
 /**
  * ----------------------------------------
  *                Skills
@@ -95,9 +100,10 @@ header {
 .cards {
     width: 90%;
     margin: auto;
+    justify-content: center;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .project {
@@ -132,8 +138,14 @@ header {
 }
 
 .project label {
+    z-index: 1;
     margin-left: 20px;
+    margin-bottom: 20px;
     color: black;
+}
+
+#projects-cards {
+    margin-top: 3rem;
 }
 
 /**
@@ -435,6 +447,7 @@ header {
 
     .project {
         display: flex;
+        margin-right: 30px;
     }
 
     .project .card-body {
@@ -493,7 +506,6 @@ header {
     }
 
     .project {
-        visibility: hidden; /*FIXME: Remove this propertie and fix screen break*/
         margin: auto;
         min-height: fit-content;
         min-width: fit-content;
@@ -501,11 +513,20 @@ header {
 
     .card {
         margin-bottom: 30px;
-        margin-top: 30px;
+    }
+
+    .cards {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .card label {
         margin-bottom: 20px;
+    }
+
+    #projects-cards {
+        margin-top: 260px;
     }
 
 }

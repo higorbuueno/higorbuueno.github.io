@@ -6,7 +6,7 @@
 
 html {
     /* a cada 1rem será considerada 10px */
-    font-size: 62.5%
+    font-size: 55%
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: #df4755;
-    height: 50px;
+    height: 5rem;
 }
 
 /**
@@ -27,22 +27,22 @@ header {
  */
 
 #end-table-space {
-    width: 50px;
+    width: 5.0rem;
 }
 
 #profile-div-photo {
     background-color: #a075f7;
-    min-width: 300px;
+    min-width: 30rem;
 }
 
 #profile-photo {
     width: 100%;
-    height: 380px;
+    height: 38rem;
 }
 
 .profile {
     width: 100%;
-    max-height: 380px;
+    max-height: 38rem;
     display: flex;
 
     box-shadow:
@@ -57,12 +57,12 @@ header {
 
 .profile-info {
     width: 70%;
-    margin: 0 15px 0 15px;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 #additional-informations {
     visibility: collapse; /*TODO: Adicionar este campo apenas quando o site estiver pronto.*/
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 /**
@@ -103,19 +103,19 @@ header {
     justify-content: center;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
 }
 
 .project {
-    margin: 30px;
+    margin: 3rem;
 }
 
 .project .card-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .project .card-body {
@@ -138,9 +138,7 @@ header {
 }
 
 .project label {
-    z-index: 1;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 2rem 2rem;
     color: black;
 }
 
@@ -447,17 +445,17 @@ header {
 
     .project {
         display: flex;
-        margin-right: 30px;
+        margin-right: 3rem;
     }
 
     .project .card-body {
         display: block;
         text-align: center;
-        margin-top: 15px;
+        margin-top: 1.5rem;
     }
 
     .project .card-body label {
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 }
 
@@ -469,12 +467,12 @@ header {
     }
 
     header {
-        min-width: 325px;
+        min-width: 32.5rem;
     }
 
     .container,
     .container-sm {
-        width: 325px;
+        width: 32.5rem;
     }
 
     .profile {
@@ -489,16 +487,16 @@ header {
     #skill-list {
         visibility: visible;
         display: flex;
-        margin-top: 10px;
-        width: 300px;
+        margin-top: 1rem;
+        width: 30rem;
         justify-content: center;
         align-items: center;
     }
 
     .skill {
-        width: 35px;
-        margin-left: 2px;
-        margin-right: 2px;
+        width: 3.5rem;
+        margin-left: .2rem;
+        margin-right: .2rem;
     }
 
     .profile-info {
@@ -512,17 +510,13 @@ header {
     }
 
     .card {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
     .cards {
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .card label {
-        margin-bottom: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     }
 
     #projects-cards {

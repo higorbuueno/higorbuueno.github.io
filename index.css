@@ -14,9 +14,21 @@ body {
   font-size: 1.6rem;
 }
 
+/**
+ * ----------------------------------------
+ *                HEADER
+ * ----------------------------------------
+ */
 header {
   background-color: #df4755;
   height: 5rem;
+}
+
+.linkedin,
+.github {
+  /* color: #0a66c2;  linkedin color*/
+  /* color: #773Fc4;  github color*/
+  color: white;
 }
 
 /**
@@ -57,8 +69,17 @@ header {
 }
 
 #additional-informations {
-  /* visibility: collapse; TODO: Adicionar este campo apenas quando o site estiver pronto.*/
   margin-top: 2rem;
+}
+
+.experience-years-input {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+}
+
+.experience-years-input:disabled {
+  background-color: white;
 }
 
 /**
@@ -523,6 +544,19 @@ header {
     visibility: collapse;
   }
 
+  .experience-years {
+    display: flex;
+    align-items: center;
+  }
+
+  .experience-years-input {
+    margin-left: 10px;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
   #skill-list {
     visibility: visible;
     display: flex;
@@ -539,7 +573,7 @@ header {
   }
 
   .profile-info {
-    margin: 0 0 0 0;
+    margin: 10px 0 0 0;
     width: unset;
   }
 

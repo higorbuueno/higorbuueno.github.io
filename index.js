@@ -8,7 +8,7 @@ function calculateYearsOfExperience() {
   const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
   
   const myInput = document.querySelector("#experience-years-input");
-  // myInput.value = (diffInDays / 365).toFixed(2);
+  myInput.value = (diffInDays / 365).toFixed(2);
   // After complete a full year in a current year, comment the line bellow a allow the above line. This make look as more experience. Remember ever adjust input width
-  myInput.value = today.getFullYear() - myFirstAdmission.getFullYear();
+  // myInput.value = today.getFullYear() - myFirstAdmission.getFullYear();
 }

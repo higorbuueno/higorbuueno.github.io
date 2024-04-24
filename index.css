@@ -37,10 +37,6 @@ header {
  * ----------------------------------------
  */
 
-#end-table-space {
-  width: 5rem;
-}
-
 #profile-div-photo {
   /* background-color: #a075f7; */
   /* min-width: 30rem; */
@@ -71,19 +67,6 @@ header {
   margin: 0 1.5rem 0 1.5rem;
 }
 
-#additional-informations {
-  margin-top: 2rem;
-}
-
-.experience-years-input {
-  width: 45px;
-  height: 35px;
-  font-size: 16px;
-}
-
-.experience-years-input:disabled {
-  background-color: white;
-}
 
 /**
  * ----------------------------------------
